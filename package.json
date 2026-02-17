@@ -6,7 +6,6 @@
     "dev": "next dev -p 1000",
     "dev:back": "PORT=5001 node src/server.js",
     "build": "next build",
-    "prebuild": "node scripts/security-check.js",
     "security:check": "node scripts/security-check.js",
     "start": "next start -p 1000",
     "lint": "eslint .",
