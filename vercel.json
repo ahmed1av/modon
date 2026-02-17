@@ -89,8 +89,7 @@
         {
             "source": "/",
             "destination": "/en",
-            "permanent": false,
-            "statusCode": 307
+            "permanent": false
         }
     ],
     "env": {
