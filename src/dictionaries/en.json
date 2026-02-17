@@ -1,0 +1,514 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "view_all": "View All",
+        "read_more": "Read More",
+        "contact_us": "Contact Us",
+        "learn_more": "Learn More"
+    },
+    "nav": {
+        "buy": "BUY",
+        "rent": "RENT",
+        "sell": "SELL",
+        "sell_menu": "Sell with us",
+        "sell_private": "Private Seller (owner)",
+        "sell_professional": "Professional seller (agent)",
+        "sell_developer": "Luxury Property Developers",
+        "new_developments": "NEW DEVELOPMENTS",
+        "property_finders": "PROPERTY FINDERS",
+        "off_market": "OFF-MARKET",
+        "off_market_buy": "Buy",
+        "off_market_sell": "Sell",
+        "about": "ABOUT US",
+        "about_company": "Our Company",
+        "about_team": "Operational Team",
+        "about_agents": "Our Agents",
+        "contact": "CONTACT",
+        "favorites": "Favorites"
+    },
+    "hero": {
+        "title_line1": "PERSONAL PROPERTY ADVISORS",
+        "title_line2": "FOR LUXURY HOMES",
+        "search_placeholder": "WHERE WOULD YOU RATHER LIVE?",
+        "search_button": "Search"
+    },
+    "home": {
+        "about": {
+            "title_line1": "Trusted by sellers. Preferred by",
+            "title_line2": "buyers.",
+            "title_highlight": "Driven by expertise.",
+            "text1": "In a landscape defined by excess and duplicates, MODON Evolutio offers a groundbreaking standard of qualified insight and seamless experience that sets a new benchmark in international real estate. Clients navigating high-end acquisitions deserve to be guided with insight, attention, and a personal property advisor who knows their market and advocates with intent.",
+            "text2": "Through a peer-to-peer network of boutique brokers and independent, personal advisors, MODON Evolutio delivers tailored access to prime real estate across the most refined markets and beyond. This is where service and expertise return to their rightful form: precise, personal, and built entirely around you."
+        },
+        "bespoke": {
+            "title_line1": "A curated approach defined",
+            "title_line2": "by your priorities",
+            "text": "Your representation is defined by expertise, independence, and a personal approach that reflects what matters most to you. From inquiring to signing and well beyond the transfer of ownership, you are supported and guided at every stage. Every detail is handled with precision and attention; delivered as a bespoke standard of service that ensures your interests are represented at every step.",
+            "cta": "Discover our Bespoke Approach"
+        },
+        "featured": {
+            "title": "Featured luxury homes for sale",
+            "view_all": "View All Properties",
+            "loading": "Loading properties..."
+        },
+        "prefer": {
+            "title_line1": "The properties you prefer,",
+            "title_line2": "and nothing more",
+            "list": [
+                "One trusted contact focused solely on your interests",
+                "Direct access to exclusive off-market listings",
+                "Transparent guidance from local experts",
+                "A private search with no unwanted registrations",
+                "A streamlined, and safe path to your new home"
+            ]
+        },
+        "equestrian": {
+            "title": "Exquisite equestrian properties",
+            "cta": "Explore Equestrian Properties"
+        },
+        "guide": {
+            "title": "Buying abroad? Avoid common pitfalls.",
+            "subtitle": "Before you continue your property search, see what every buyer learns too late.",
+            "text1": "Every year, we see international buyers fall into the same traps. They spend weeks. They waste far too much time chasing duplicate listings, only to discover the properties are outdated or no longer available. They are registered as \"clients\" with agencies they never agreed to. Without realizing it, they end up listed as \"registered clients\" with multiple agencies. And too often, they rely on seller's brokers who claim to serve both sides, a setup that rarely protects the buyer's interests.",
+            "text2": "These are avoidable mistakes, but only if you know where to look. In this short video, we share the three most common pitfalls that turn a dream search into a frustrating experience, and we show you how to approach the international market with clarity, confidence and the right support."
+        },
+        "access_form": {
+            "title": "Access your free guide for safe international property buying",
+            "first_name": "First name *",
+            "last_name": "Last name *",
+            "email": "Email *",
+            "phone": "Phone number",
+            "message": "Your message *",
+            "marketing_consent_start": "I agree to receive marketing communications and accept the ",
+            "privacy_policy": "privacy policy",
+            "marketing_consent_end": ". I can unsubscribe at any time.",
+            "submit": "Send"
+        }
+    },
+    "footer": {
+        "columns": {
+            "buy": "Buy",
+            "property_finders": "Property Finders",
+            "sell": "Sell with us",
+            "off_market": "Off-Market",
+            "about": "About Us",
+            "contact": "Contact"
+        },
+        "links": {
+            "all_types": "All property types",
+            "residential": "Residential",
+            "commercial": "Commercial",
+            "industrial": "Industrial",
+            "bespoke": "Bespoke approach",
+            "how_it_works": "How it works",
+            "private_seller": "Private Seller (owner)",
+            "professional_seller": "Professional seller (agent)",
+            "developers": "Luxury Property Developers",
+            "sell_off": "Sell",
+            "buy_off": "Buy",
+            "company": "Our Company",
+            "team": "Operational Team",
+            "agents": "Our Agents",
+            "investors": "Investor Relations",
+            "get_in_touch": "Get in touch",
+            "locations": "Locations"
+        },
+        "contact_info": {
+            "phone": "Phone:",
+            "address": "Address:"
+        },
+        "legal": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Use",
+            "copyright": " MODON Evolutio. All rights reserved."
+        }
+    },
+    "property_card": {
+        "sqm": "m²",
+        "beds": "beds",
+        "baths": "baths",
+        "view_details": "View Details",
+        "featured": "FEATURED",
+        "price_on_request": "Price on Request",
+        "add_favorite": "Add to favorites",
+        "remove_favorite": "Remove from favorites"
+    },
+    "buy_page": {
+        "hero_title": "Luxury Properties for Sale",
+        "hero_subtitle": "Discover extraordinary homes across the world's most prestigious locations",
+        "search_placeholder": "Search by location, property name...",
+        "filters": {
+            "all_locations": "All Locations",
+            "all_types": "All Types",
+            "all_prices": "All Prices",
+            "clear": "Clear",
+            "clear_all": "Clear All Filters"
+        },
+        "results": {
+            "found": "properties found",
+            "in": "in",
+            "matching": "matching",
+            "loading": "Loading properties...",
+            "error": "Error loading properties",
+            "no_results": "No properties found",
+            "try_adjusting": "Try adjusting your filters or search terms",
+            "load_more": "Load More Properties",
+            "showing": "Showing"
+        }
+    },
+    "rent_page": {
+        "hero_title": "Luxury Properties for Rent",
+        "hero_subtitle": "Discover extraordinary homes across the world's most prestigious locations",
+        "search_placeholder": "Search by location, property name...",
+        "filters": {
+            "all_locations": "All Locations",
+            "all_types": "All Types",
+            "all_prices": "All Prices",
+            "clear": "Clear",
+            "clear_all": "Clear All Filters"
+        },
+        "results": {
+            "found": "properties found",
+            "in": "in",
+            "matching": "matching",
+            "loading": "Loading properties...",
+            "error": "Error loading properties",
+            "no_results": "No properties found",
+            "try_adjusting": "Try adjusting your filters or search terms",
+            "load_more": "Load More Properties",
+            "showing": "Showing"
+        }
+    },
+    "our_company": {
+        "hero_title": "Our Story",
+        "hero_subtitle": "Personal property advisors for discerning clients worldwide",
+        "intro_title_1": "Trusted by sellers.",
+        "intro_title_2": "Preferred by buyers.",
+        "intro_text_1": "At MODON Evolutio, we believe that buying or selling a luxury property should be a seamless, rewarding experience. Since our founding, we've built our reputation on providing personalized service, expert guidance, and unparalleled market knowledge.",
+        "intro_text_2": "Our approach combines the intimacy of a boutique advisory with the reach of a global network. We work exclusively with clients who value discretion, expertise, and results over volume.",
+        "values_title": "What We Stand For",
+        "values": {
+            "client_first": {
+                "title": "Client-First Approach",
+                "description": "Every decision we make is guided by our clients' best interests."
+            },
+            "global_perspective": {
+                "title": "Global Perspective",
+                "description": "Local expertise combined with international reach and connections."
+            },
+            "excellence": {
+                "title": "Excellence",
+                "description": "Uncompromising standards in service, marketing, and results."
+            },
+            "trust_integrity": {
+                "title": "Trust & Integrity",
+                "description": "Transparent relationships built on honesty and discretion."
+            }
+        },
+        "timeline_title": "Our Journey",
+        "milestones": {
+            "founded": {
+                "title": "Founded",
+                "description": "MODON Evolutio established in Egypt"
+            },
+            "expansion": {
+                "title": "European Expansion",
+                "description": "Offices opened across Europe"
+            },
+            "network": {
+                "title": "Global Network",
+                "description": "International partner network launched"
+            },
+            "digital": {
+                "title": "Digital Innovation",
+                "description": "Advanced platform for global buyers"
+            }
+        },
+        "quote": "\"Our mission is simple: to provide each client with the insight, access, and expertise needed to make their property dreams a reality.\"",
+        "quote_author": "— MODON Evolutio Founding Team",
+        "team_cta": {
+            "title": "Meet Our Team",
+            "text": "Our advisors bring decades of combined experience in luxury real estate",
+            "button": "View Leadership"
+        }
+    },
+    "management_team": {
+        "hero_title": "Our Leadership",
+        "hero_subtitle": "Meet the experts behind MODON Evolutio's success",
+        "members": [
+            {
+                "name": "Alexander van der Berg",
+                "role": "Founder & Managing Director",
+                "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400",
+                "bio": "Over 20 years of experience in international luxury real estate. Alexander founded MODON Evolutio with a vision to redefine property advisory services.",
+                "linkedin": "#",
+                "email": "alexander@modonevolutio.com"
+            },
+            {
+                "name": "Sofia Martinez",
+                "role": "Director of Sales",
+                "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+                "bio": "Leading our global sales team, Sofia brings expertise from luxury hospitality and high-end property transactions across Europe.",
+                "linkedin": "#",
+                "email": "sofia@modonevolutio.com"
+            },
+            {
+                "name": "James Chen",
+                "role": "Head of International Markets",
+                "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+                "bio": "James oversees our expansion into Asia-Pacific and Middle Eastern markets, connecting global buyers with European properties.",
+                "linkedin": "#",
+                "email": "james@modonevolutio.com"
+            },
+            {
+                "name": "Emma Johansson",
+                "role": "Head of Marketing",
+                "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
+                "bio": "Emma leads our digital and traditional marketing initiatives, ensuring every property receives premium positioning.",
+                "linkedin": "#",
+                "email": "emma@modonevolutio.com"
+            },
+            {
+                "name": "Marco Rossi",
+                "role": "Senior Property Advisor",
+                "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+                "bio": "Specializing in Mediterranean properties, Marco has closed over €500M in transactions across Italy, Spain, and Croatia.",
+                "linkedin": "#",
+                "email": "marco@modonevolutio.com"
+            },
+            {
+                "name": "Isabella Laurent",
+                "role": "Client Relations Director",
+                "image": "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?auto=format&fit=crop&q=80&w=400",
+                "bio": "Isabella ensures every client receives the personalized attention that defines the MODON Evolutio experience.",
+                "linkedin": "#",
+                "email": "isabella@modonevolutio.com"
+            }
+        ],
+        "join_team": {
+            "title": "Join Our Team",
+            "text": "We're always looking for exceptional talent to join our growing team",
+            "button": "View Opportunities"
+        }
+    },
+    "real_estate_agents": {
+        "hero_title": "Our Advisors",
+        "hero_subtitle": "Expert guidance from seasoned property professionals",
+        "intro_title": "Meet Your Property Advisor",
+        "intro_text": "Each MODON Evolutio advisor brings specialized knowledge of their local market combined with access to our global network. Whether buying, selling, or exploring options, your advisor is your trusted partner throughout.",
+        "members": [
+            {
+                "name": "Erik van den Berg",
+                "title": "Senior Property Advisor",
+                "region": "Amsterdam",
+                "specialization": "Canal Houses & Historic Properties",
+                "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400",
+                "email": "erik@modonevolutio.com"
+            },
+            {
+                "name": "Maria Santos",
+                "title": "Property Advisor",
+                "region": "Marbella",
+                "specialization": "Beachfront Villas",
+                "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+                "email": "maria@modonevolutio.com"
+            },
+            {
+                "name": "Thomas Müller",
+                "title": "International Sales Director",
+                "region": "Monaco",
+                "specialization": "Ultra-Luxury Properties",
+                "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+                "email": "thomas@modonevolutio.com"
+            },
+            {
+                "name": "Sophie Laurent",
+                "title": "Property Advisor",
+                "region": "French Riviera",
+                "specialization": "Coastal Estates",
+                "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
+                "email": "sophie@modonevolutio.com"
+            },
+            {
+                "name": "Alessandro Rossi",
+                "title": "Senior Property Advisor",
+                "region": "Italy",
+                "specialization": "Tuscan Estates & Historic Villas",
+                "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+                "email": "alessandro@modonevolutio.com"
+            },
+            {
+                "name": "Helena Johansson",
+                "title": "Property Advisor",
+                "region": "Het Gooi",
+                "specialization": "Family Estates",
+                "image": "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?auto=format&fit=crop&q=80&w=400",
+                "email": "helena@modonevolutio.com"
+            },
+            {
+                "name": "James Wilson",
+                "title": "Property Advisor",
+                "region": "London",
+                "specialization": "Prime Central London",
+                "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
+                "email": "james@modonevolutio.com"
+            },
+            {
+                "name": "Fatima Al-Hassan",
+                "title": "International Liaison",
+                "region": "Dubai",
+                "specialization": "International Buyers",
+                "image": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&q=80&w=400",
+                "email": "fatima@modonevolutio.com"
+            }
+        ],
+        "join_team": {
+            "title": "Interested in Joining Our Team?",
+            "text": "We're always looking for exceptional property professionals",
+            "button": "Explore Opportunities"
+        },
+        "contact_button": "Contact"
+    },
+    "contact_page": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch with our luxury property advisors",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "phone": "Phone",
+            "message": "Message",
+            "submit": "Send Message"
+        },
+        "contact_info": {
+            "address": "Address",
+            "phone": "Phone",
+            "email": "Email"
+        }
+    },
+    "property_details": {
+        "title_suffix": "MODON Development",
+        "not_found": {
+            "title": "Property Not Found",
+            "description": "The requested property could not be found."
+        },
+        "breadcrumb": {
+            "home": "Home",
+            "buy": "Properties for Sale"
+        },
+        "badges": {
+            "exclusive": "Exclusive",
+            "featured": "Featured"
+        },
+        "price": {
+            "per_meter": "/ m²"
+        },
+        "ref": "Ref:",
+        "stats": {
+            "bedrooms": "Bedrooms",
+            "bathrooms": "Bathrooms",
+            "living_area": "Living Area",
+            "plot_size": "Plot Size"
+        },
+        "sections": {
+            "description": "Property Description",
+            "virtual_tour": "Virtual Tour",
+            "features": "Features & Amenities",
+            "details": "Property Details"
+        },
+        "specs": {
+            "type": "Property Type",
+            "bedrooms": "Bedrooms",
+            "bathrooms": "Bathrooms",
+            "living_area": "Living Area",
+            "plot_size": "Plot Size",
+            "terrace": "Terrace",
+            "garages": "Garages",
+            "floors": "Floors"
+        },
+        "contact_form": {
+            "title": "Interested in this property?",
+            "subtitle": "Contact us for more information or a viewing",
+            "name": "Name",
+            "email": "Email",
+            "phone": "Phone",
+            "message": "Message",
+            "submit": "Send Inquiry",
+            "sending": "Sending...",
+            "sent_title": "Inquiry Sent!",
+            "sent_desc": "Thank you for your interest. {agentName} will contact you shortly.",
+            "send_another": "Send Another Inquiry",
+            "failed": "Failed to send inquiry. Please try again.",
+            "privacy": "By submitting, you agree to our ",
+            "privacy_link": "Privacy Policy",
+            "preferred": "Preferred Contact Method",
+            "schedule": "I would like to schedule a viewing"
+        },
+        "actions": {
+            "save": "Save",
+            "saved": "Saved",
+            "share": "Share",
+            "pdf": "PDF",
+            "generating": "Generating...",
+            "link_copied": "Link copied to clipboard!"
+        }
+    },
+    "admin": {
+        "dashboard": "Admin Dashboard",
+        "manage_properties": "Manage Properties",
+        "add_property": "Add New Property",
+        "edit_property": "Edit Property",
+        "property_list": "Property List",
+        "drafts": "Drafts",
+        "published": "Published",
+        "status": "Status",
+        "actions": "Actions",
+        "publish": "Publish",
+        "save_draft": "Save Draft",
+        "delete": "Delete",
+        "edit": "Edit",
+        "title_en": "Title (EN)",
+        "title_ar": "Title (AR)",
+        "description_en": "Description (EN)",
+        "description_ar": "Description (AR)",
+        "price": "Price",
+        "city": "City",
+        "type": "Type",
+        "bedrooms": "Bedrooms",
+        "bathrooms": "Bathrooms",
+        "area": "Area (sqm)",
+        "main_image": "Main Image",
+        "additional_images": "Additional Images",
+        "upload_images": "Upload Images",
+        "success_msg": "Operation successful!",
+        "error_msg": "Operation failed properly check inputs.",
+        "confirmation": "Are you sure?",
+        "cancel": "Cancel",
+        "confirm_delete": "Yes, delete property"
+    },
+    "investors": {
+        "hero_title": "Redefining Luxury Real Estate",
+        "hero_subtitle": "An intelligent ecosystem connecting prime developers, high-net-worth buyers, and expert advisors.",
+        "problem_title": "The Challenge",
+        "problem_text": "The luxury market in Egypt is fragmented, plagued by stale listings, and lacks a unified digital standard that meets international expectations.",
+        "solution_title": "The MODON Evolution",
+        "solution_text": "We provide a high-tech layer that curates only the best, provides real-time data transparency, and automates the luxury transaction journey through AI-driven insights.",
+        "market_title": "The Opportunity",
+        "market_cap": "Egypt's luxury real estate market is projected to grow by 15% annually, driven by new massive urban developments and rising international demand.",
+        "business_model_title": "Scalable Business Model",
+        "revenue_streams": [
+            "Premium Developer Ecosystem Fees",
+            "SaaS-enabled Agency Management",
+            "Strategic Advisory Success Sharing"
+        ],
+        "tech_title": "The Technology Stack",
+        "tech_stack": [
+            "Supabase Real-time Infrastructure",
+            "AI-powered Property Matching",
+            "Secure Blockchain Transactions (Roadmap)"
+        ],
+        "demo_title": "Experience the Vision",
+        "cta": "Request Investor Deck",
+        "contact_sales": "Contact Strategic Relations"
+    }
+}

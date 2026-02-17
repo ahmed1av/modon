@@ -1,0 +1,389 @@
+/**
+ * MODON EVOLUTIO - Interiors Page Styles
+ * ===================================
+ */
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 550px;
+    background: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 35, 73, 0.85) 0%, rgba(0, 35, 73, 0.6) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 0 24px;
+}
+
+.heroTag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(193, 154, 107, 0.2);
+    border: 1px solid rgba(193, 154, 107, 0.4);
+    color: #c19a6b;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+    color: #fff;
+}
+
+.heroTitle em {
+    font-style: italic;
+}
+
+.heroSubtitle {
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.serviceImageInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolioImageInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+/* Services */
+.services {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.servicesHeader {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.servicesHeader h2 {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0;
+}
+
+.servicesHeader h2 em {
+    font-style: italic;
+}
+
+.servicesGrid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.serviceCard {
+    background: #fff;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.serviceImage {
+    height: 180px;
+    overflow: hidden;
+}
+
+.serviceImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.serviceCard:hover .serviceImage img {
+    transform: scale(1.05);
+}
+
+.serviceInfo {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.serviceInfo h3 {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0 0 12px 0;
+}
+
+.serviceInfo p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.portfolioHeader {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.portfolioHeader h2 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0;
+}
+
+.portfolioGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.portfolioItem {
+    height: 280px;
+    overflow: hidden;
+}
+
+.portfolioItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.portfolioItem:hover img {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contactSection {
+    padding: 80px 0;
+    background: #002349;
+}
+
+.contactContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contactInfo h2 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 16px 0;
+}
+
+.contactInfo>p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 32px 0;
+}
+
+.checkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 14px;
+}
+
+.checkList svg {
+    color: #c19a6b;
+    flex-shrink: 0;
+}
+
+/* Form */
+.form {
+    background: #fff;
+    padding: 40px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #002349;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    padding: 14px 16px;
+    border: 1px solid #e9ecef;
+    background: #f8f9fa;
+    font-size: 14px;
+    color: #002349;
+    outline: none;
+    transition: all 0.2s ease;
+    border-radius: 0;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border-color: #c19a6b;
+    background: #fff;
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 16px 32px;
+    background: #c19a6b;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submitBtn:hover {
+    background: #a68659;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+
+    .servicesGrid,
+    .contactContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolioGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 450px;
+        margin-top: 80px;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+    }
+
+    .serviceCard {
+        grid-template-columns: 1fr;
+    }
+
+    .serviceImage {
+        height: 200px;
+    }
+
+    .portfolioGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolioItem {
+        height: 250px;
+    }
+
+    .form {
+        padding: 24px;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+}

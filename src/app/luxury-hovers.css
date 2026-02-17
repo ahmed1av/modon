@@ -1,0 +1,175 @@
+/**
+ * MODON EVOLUTIO - Luxury Hover Effects System
+ * =============================================
+ * Premium interaction patterns matching MODON Evolutio aesthetic
+ */
+
+/* ====================================
+   NAVIGATION HOVER EFFECTS
+   ==================================== */
+
+/* Remove default blue/grey hovers globally */
+a:hover {
+    color: inherit;
+}
+
+button:hover {
+    background: inherit;
+}
+
+/* Navigation Links - Gold on Hover */
+nav a,
+.nav-link,
+[class*="navLink"],
+[class*="topLink"],
+[class*="Link"] {
+    transition: color var(--transition-normal);
+}
+
+nav a:hover,
+.nav-link:hover,
+[class*="navLink"]:hover,
+[class*="topLink"]:hover {
+    color: var(--color-modon-gold) !important;
+}
+
+/* ====================================
+   BUTTON HOVER EFFECTS
+   ==================================== */
+
+/* Primary Gold Buttons */
+button[class*="Button"],
+button[class*="btn"],
+.button-primary,
+[class*="searchButton"],
+[class*="loadMoreBtn"] {
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+button[class*="Button"]:hover,
+button[class*="btn"]:hover,
+.button-primary:hover,
+[class*="searchButton"]:hover:not(:disabled),
+[class*="loadMoreBtn"]:hover:not(:disabled) {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(193, 154, 107, 0.3);
+}
+
+/* Gold buttons get darker gold on hover */
+button[class*="Button"][style*="#C9A961"]:hover,
+button[style*="background: #C9A961"]:hover,
+button[style*="background:#C9A961"]:hover {
+    background: #b8984f !important;
+}
+
+/* ====================================
+   PROPERTY CARD HOVER EFFECTS
+   ==================================== */
+
+/* Card Container - Gold Border */
+[class*="propertyCard"],
+[class*="card"] {
+    transition: all var(--transition-normal);
+    border: 1px solid transparent;
+}
+
+[class*="propertyCard"]:hover,
+[class*="card"]:hover {
+    border-color: var(--color-modon-gold);
+    box-shadow: 0 8px 24px rgba(0, 35, 73, 0.12);
+    transform: translateY(-4px);
+}
+
+/* Image Zoom Effect */
+[class*="propertyCard"] img,
+[class*="card"] img,
+[class*="cardImage"] img,
+[class*="propertyImage"] img {
+    transition: transform var(--transition-slow);
+}
+
+[class*="propertyCard"]:hover img,
+[class*="card"]:hover img,
+[class*="cardImage"]:hover img,
+[class*="propertyImage"]:hover img {
+    transform: scale(1.05);
+}
+
+/* Card Title - Turn Gold */
+[class*="propertyCard"] h3,
+[class*="propertyCard"] [class*="title"],
+[class*="card"] h3,
+[class*="card"] [class*="title"],
+[class*="cardTitle"] {
+    transition: color var(--transition-normal);
+}
+
+[class*="propertyCard"]:hover h3,
+[class*="propertyCard"]:hover [class*="title"],
+[class*="card"]:hover h3,
+[class*="card"]:hover [class*="title"] {
+    color: var(--color-modon-gold) !important;
+}
+
+/* ====================================
+   FILTER & SEARCH HOVER EFFECTS
+   ==================================== */
+
+[class*="filterDropdown"] select:hover,
+[class*="searchInput"]:hover,
+input[type="text"]:hover,
+select:hover {
+    border-color: var(--color-modon-gold);
+}
+
+/* Clear/Close Buttons */
+[class*="clearBtn"]:hover,
+[class*="closeBtn"]:hover {
+    color: var(--color-modon-gold);
+    transform: rotate(90deg);
+}
+
+/* ====================================
+   VIEW TOGGLE BUTTONS
+   ==================================== */
+
+[class*="viewToggle"] button {
+    transition: all var(--transition-fast);
+}
+
+[class*="viewToggle"] button:hover:not([class*="active"]) {
+    color: var(--color-modon-gold);
+    background: rgba(193, 154, 107, 0.1);
+}
+
+/* ====================================
+   DROPDOWN & LANGUAGE SWITCHER
+   ==================================== */
+
+[class*="dropdown"] button:hover,
+[class*="switcher"]:hover,
+[class*="option"]:hover {
+    background: rgba(193, 154, 107, 0.1);
+    color: var(--color-modon-gold);
+}
+
+/* ====================================
+   SCROLL INDICATORS & MICRO-INTERACTIONS
+   ==================================== */
+
+[class*="scrollIndicator"]:hover {
+    opacity: 1 !important;
+}
+
+/* Smooth color transitions for icons */
+svg,
+[class*="icon"] {
+    transition: color var(--transition-fast);
+}
+
+a:hover svg,
+button:hover svg {
+    color: var(--color-modon-gold);
+}

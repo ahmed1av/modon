@@ -1,0 +1,240 @@
+/**
+ * MODON EVOLUTIO - Filter Bar Styles
+ * ===============================
+ * Pixel-perfect filter bar with dropdowns
+ */
+
+/* ====================================
+   FILTER BAR CONTAINER
+   ==================================== */
+.filterBar {
+    position: sticky;
+    top: 100px;
+    z-index: 50;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: 16px 0;
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* ====================================
+   FILTER SECTIONS
+   ==================================== */
+.filtersLeft,
+.filtersRight {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ====================================
+   FILTER DROPDOWNS
+   ==================================== */
+.filterDropdown {
+    position: relative;
+}
+
+.filterButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--color-off-white);
+    border: 1px solid transparent;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-charcoal);
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.filterButton:hover {
+    border-color: var(--color-border);
+}
+
+.chevron {
+    opacity: 0.6;
+    transition: transform 0.2s ease;
+}
+
+.chevron.open {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 200px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-dropdown);
+    z-index: 100;
+    animation: fadeInDropdown 0.2s ease;
+}
+
+@keyframes fadeInDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdownItem {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-charcoal);
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.dropdownItem:hover {
+    background: var(--color-off-white);
+    color: var(--color-gold);
+}
+
+.dropdownItem.active {
+    color: var(--color-gold);
+    font-weight: 500;
+}
+
+/* More Filters Button */
+.moreFiltersBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-charcoal);
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.moreFiltersBtn:hover {
+    background: var(--color-charcoal);
+    border-color: var(--color-charcoal);
+    color: var(--color-white);
+}
+
+/* ====================================
+   RESULTS COUNT
+   ==================================== */
+.resultsCount {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.count {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-charcoal);
+}
+
+.label {
+    font-size: 13px;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ====================================
+   VIEW TOGGLE
+   ==================================== */
+.viewToggle {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+}
+
+.viewBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: none;
+    color: var(--color-text-light);
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.viewBtn:first-child {
+    border-right: 1px solid var(--color-border);
+}
+
+.viewBtn:hover {
+    color: var(--color-charcoal);
+}
+
+.viewBtn.active {
+    background: var(--color-charcoal);
+    color: var(--color-white);
+}
+
+/* ====================================
+   RESPONSIVE STYLES
+   ==================================== */
+@media (max-width: 1200px) {
+    .resultsCount {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .filterBar {
+        top: 70px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .filtersLeft,
+    .filtersRight {
+        flex: 1;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .filterButton,
+    .moreFiltersBtn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .viewToggle {
+        display: none;
+    }
+}

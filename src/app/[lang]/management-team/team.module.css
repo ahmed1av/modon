@@ -1,0 +1,203 @@
+/**
+ * MODON EVOLUTIO - Team Page Styles
+ * ==============================
+ */
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 35, 73, 0.7) 0%, rgba(0, 35, 73, 0.5) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 0 24px;
+}
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+    color: #fff;
+}
+
+.heroTitle em {
+    font-style: italic;
+}
+
+.heroSubtitle {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Team Section */
+.teamSection {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.teamGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Member Card */
+.memberCard {
+    background: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.memberCard:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.memberImage {
+    height: 300px;
+    overflow: hidden;
+}
+
+.memberImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.memberCard:hover .memberImage img {
+    transform: scale(1.05);
+}
+
+.memberInfo {
+    padding: 28px;
+}
+
+.memberInfo h3 {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0 0 6px 0;
+}
+
+.role {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c19a6b;
+    margin-bottom: 16px;
+}
+
+.memberInfo p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #6c757d;
+    margin: 0 0 20px 0;
+}
+
+.memberLinks {
+    display: flex;
+    gap: 12px;
+}
+
+.memberLinks a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    color: #6c757d;
+    transition: all 0.2s ease;
+}
+
+.memberLinks a:hover {
+    background: #002349;
+    color: #fff;
+}
+
+/* Join CTA */
+.joinCta {
+    padding: 80px 0;
+    background: #002349;
+    text-align: center;
+}
+
+.joinContent h2 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 12px 0;
+}
+
+.joinContent p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 32px 0;
+}
+
+.ctaBtn {
+    display: inline-block;
+    padding: 16px 48px;
+    background: #c19a6b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.ctaBtn:hover {
+    background: #a68659;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .teamGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+        margin-top: 80px;
+    }
+
+    .heroTitle {
+        font-size: 36px;
+    }
+
+    .teamGrid {
+        grid-template-columns: 1fr;
+    }
+}

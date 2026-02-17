@@ -1,0 +1,371 @@
+/**
+ * MODON EVOLUTIO - Login Page Styles
+ * ====================================
+ * Premium login page with split layout
+ */
+
+/* ====================================
+   MAIN CONTAINER
+   ==================================== */
+.loginPage {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #0a0a0a;
+    overflow-x: hidden;
+}
+
+/* RTL layout - swap order */
+.loginPage[dir="rtl"] .imageSection {
+    order: 2;
+}
+
+.loginPage[dir="rtl"] .formSection {
+    order: 1;
+}
+
+/* ====================================
+   IMAGE SECTION (Left)
+   ==================================== */
+.imageSection {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    order: 1;
+}
+
+.imagePlaceholder {
+    position: absolute;
+    inset: 0;
+    background: #171717;
+}
+
+.heroImage {
+    object-fit: cover;
+}
+
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.4));
+    z-index: 1;
+}
+
+.imageText {
+    position: absolute;
+    bottom: 80px;
+    left: 48px;
+    right: 48px;
+    z-index: 2;
+    color: #fff;
+}
+
+.imageTitle {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.imageSubtitle {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.9;
+    max-width: 480px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ====================================
+   FORM SECTION (Right)
+   ==================================== */
+.formSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 48px;
+    background: #0a0a0a;
+    position: relative;
+    z-index: 20;
+    order: 2;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 440px;
+}
+
+/* Brand Link */
+.brandLink {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.brandText {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid #D4AF37;
+    padding-bottom: 4px;
+    color: #D4AF37;
+    transition: color 0.3s ease;
+}
+
+.brandLink:hover .brandText {
+    color: #e8c84a;
+}
+
+/* Sign In Title */
+.formTitle {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.formSubtitle {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 16px;
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* ====================================
+   FORM ELEMENTS
+   ==================================== */
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* Error Message */
+.errorBox {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.errorIcon {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.errorText {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Input Groups */
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputLabel {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #9ca3af;
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.inputIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    transition: color 0.2s ease;
+    z-index: 1;
+}
+
+/* LTR: icon on left */
+.inputWrapper .inputIcon {
+    left: 16px;
+}
+
+/* RTL: icon on right */
+[dir="rtl"] .inputWrapper .inputIcon {
+    left: auto;
+    right: 16px;
+}
+
+.formInput {
+    width: 100%;
+    background: #171717;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 16px 16px 16px 48px;
+    color: #fff;
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+[dir="rtl"] .formInput {
+    padding: 16px 48px 16px 16px;
+}
+
+.formInput::placeholder {
+    color: #4b5563;
+}
+
+.formInput:focus {
+    border-color: #D4AF37;
+}
+
+.inputWrapper:focus-within .inputIcon {
+    color: #D4AF37;
+}
+
+/* ====================================
+   REMEMBER ME + FORGOT PASSWORD ROW
+   ==================================== */
+.rememberRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid #404040;
+    background: #171717;
+    accent-color: #D4AF37;
+    cursor: pointer;
+}
+
+.checkboxText {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 14px;
+    color: #9ca3af;
+    transition: color 0.2s ease;
+}
+
+.checkboxLabel:hover .checkboxText {
+    color: #d1d5db;
+}
+
+.forgotLink {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 14px;
+    color: #D4AF37;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.forgotLink:hover {
+    text-decoration: underline;
+}
+
+/* ====================================
+   SUBMIT BUTTON
+   ==================================== */
+.submitBtn {
+    width: 100%;
+    background: #D4AF37;
+    color: #000;
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
+}
+
+.submitBtn:hover {
+    background: #c19e2f;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px rgba(212, 175, 55, 0.25);
+}
+
+.submitBtn:active {
+    transform: scale(0.98);
+}
+
+.submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.submitBtnArrow {
+    transition: transform 0.2s ease;
+}
+
+[dir="rtl"] .submitBtnArrow {
+    transform: rotate(180deg);
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ====================================
+   RESPONSIVE
+   ==================================== */
+@media (max-width: 1024px) {
+    .loginPage {
+        grid-template-columns: 1fr;
+    }
+
+    .imageSection {
+        display: none;
+    }
+
+    .formSection {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formTitle {
+        font-size: 28px;
+    }
+
+    .formSubtitle {
+        font-size: 14px;
+    }
+}

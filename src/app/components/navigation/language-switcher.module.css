@@ -1,0 +1,85 @@
+.switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-charcoal);
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.switcher:hover {
+    color: var(--color-gold);
+}
+
+.current {
+    text-transform: uppercase;
+}
+
+.chevron {
+    transition: transform 0.2s ease;
+}
+
+.chevron.open {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--color-white);
+    padding: 8px 0;
+    min-width: 120px;
+    box-shadow: var(--shadow-dropdown);
+    border-radius: 0;
+    /* Sharp edges */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.2s ease forwards;
+    border: 1px solid var(--color-border-soft);
+}
+
+.option {
+    padding: 8px 16px;
+    text-align: left;
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-charcoal);
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option:hover {
+    background: var(--color-off-white);
+    color: var(--color-gold);
+}
+
+.option.active {
+    color: var(--color-gold);
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

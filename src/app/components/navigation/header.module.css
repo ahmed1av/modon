@@ -1,0 +1,473 @@
+/**
+ * MODON EVOLUTIO - Header Styles
+ * ===============================
+ * Luxury header matching Baerz.com aesthetic
+ * Dark transparent header, gold accents, mega-menu dropdowns
+ */
+
+/* ====================================
+   HEADER CONTAINER
+   ==================================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+.header.scrolled {
+    background: #002244;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ====================================
+   TOP BAR - Social + Logo + Utilities
+   ==================================== */
+.topBar {
+    background: transparent;
+    padding: 14px 0;
+    transition: all 0.3s ease;
+}
+
+.header.scrolled .topBar {
+    background: #002244;
+    padding: 10px 0;
+}
+
+.topContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Social Icons */
+.socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.socialIcons a {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+}
+
+.socialIcons a:hover {
+    color: #BE9C7E;
+    transform: translateY(-1px);
+}
+
+.tiktokLabel {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+}
+
+.logoText {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    color: #fff;
+}
+
+.logo img {
+    height: 36px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.logoWhite {
+    display: block;
+}
+
+.logoBlue {
+    display: none;
+}
+
+.header.scrolled .logoWhite {
+    display: none;
+}
+
+.header.scrolled .logoBlue {
+    display: block;
+}
+
+/* Utility Links */
+.utilityLinks {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.topLink {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.25s ease;
+}
+
+.topLink:hover {
+    color: #BE9C7E;
+}
+
+.header.scrolled .topLink {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.header.scrolled .topLink:hover {
+    color: #BE9C7E;
+}
+
+/* Language Switcher */
+.langSwitcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 4px 8px;
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+.langSwitcher:hover {
+    color: #BE9C7E;
+}
+
+.langChevron {
+    transition: transform 0.2s ease;
+}
+
+.langChevron.open {
+    transform: rotate(180deg);
+}
+
+.langDropdown {
+    position: absolute;
+    top: 100%;
+    inset-inline-end: 0;
+    background: rgba(0, 34, 68, 0.95);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(190, 156, 126, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 8px 0;
+    min-width: 80px;
+    z-index: 100;
+}
+
+.langOption {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: start;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.langOption:hover,
+.langOption.active {
+    background: rgba(190, 156, 126, 0.15);
+    color: #BE9C7E;
+}
+
+/* ====================================
+   MAIN NAVIGATION
+   ==================================== */
+.mainNav {
+    background: transparent;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.3s ease;
+}
+
+.header.scrolled .mainNav {
+    background: #002244;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    position: relative;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 14px 4px;
+    letter-spacing: 0.04em;
+    transition: all 0.25s ease;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+}
+
+.navLink:hover {
+    color: #fff;
+}
+
+/* Active parent link when submenu is open - Baerz style thin white border */
+.hasSubmenu:hover>.navLink,
+.navItem.active>.navLink {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 14px 12px;
+}
+
+.header.scrolled .navLink {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.header.scrolled .navLink:hover {
+    color: #BE9C7E;
+}
+
+.header.scrolled .hasSubmenu:hover>.navLink {
+    border-color: rgba(190, 156, 126, 0.5);
+    color: #BE9C7E;
+}
+
+.chevron {
+    transition: transform 0.25s ease;
+    opacity: 0.7;
+}
+
+.chevron.open {
+    transform: rotate(180deg);
+}
+
+/* ====================================
+   MEGA DROPDOWN - Baerz Style
+   ==================================== */
+.submenu {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 22, 44, 0.92);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(190, 156, 126, 0.15);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+    min-width: 260px;
+    padding: 8px 0;
+    animation: megaFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes megaFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.submenuLink {
+    display: block;
+    padding: 14px 28px;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.submenuLink:hover {
+    background: rgba(190, 156, 126, 0.2);
+    color: #fff;
+    border-left-color: #BE9C7E;
+    padding-inline-start: 32px;
+}
+
+/* Mobile Menu Toggle */
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.header.scrolled .menuToggle {
+    color: #fff;
+}
+
+/* ====================================
+   RESPONSIVE STYLES
+   ==================================== */
+@media (max-width: 1024px) {
+    .navLinks {
+        gap: 22px;
+    }
+
+    .navLink {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 860px) {
+    .menuToggle {
+        display: block;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 90px);
+        background: #002244;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+        padding: 24px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .navLinks.mobileOpen {
+        transform: translateX(0);
+    }
+
+    :global([dir="rtl"]) .navLinks {
+        transform: translateX(100%);
+    }
+
+    :global([dir="rtl"]) .navLinks.mobileOpen {
+        transform: translateX(0);
+    }
+
+    .navItem {
+        width: 100%;
+    }
+
+    .navLink {
+        color: #fff;
+        font-size: 14px;
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .hasSubmenu:hover>.navLink {
+        border: none;
+        border-bottom: 1px solid rgba(190, 156, 126, 0.3);
+        padding: 16px 0;
+    }
+
+    .submenu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: rgba(0, 34, 68, 0.6);
+        margin-top: 0;
+        padding: 8px 0;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        animation: none;
+    }
+
+    .submenuLink {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 13px;
+        padding: 14px 24px;
+        border-left: none;
+    }
+
+    .submenuLink:hover {
+        background: rgba(190, 156, 126, 0.15);
+        color: #BE9C7E;
+        border-left: none;
+        padding-inline-start: 28px;
+    }
+
+    .socialIcons {
+        display: none;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+    }
+
+    .topContainer {
+        padding: 0 20px;
+    }
+
+    .navContainer {
+        padding: 0 20px;
+    }
+}

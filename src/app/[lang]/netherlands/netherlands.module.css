@@ -1,0 +1,248 @@
+/**
+ * MODON EVOLUTIO - Netherlands Page Styles
+ * =====================================
+ */
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 500px;
+    background: url('https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 35, 73, 0.7) 0%, rgba(0, 35, 73, 0.5) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 0 24px;
+}
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: 52px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+    color: #fff;
+}
+
+.heroTitle em {
+    font-style: italic;
+}
+
+.heroSubtitle {
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.regionImageInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+/* Regions */
+.regions {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.regionsHeader {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.regionsHeader h2 {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0;
+}
+
+.regionsHeader h2 em {
+    font-style: italic;
+}
+
+.regionsGrid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.regionCard {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    background: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.regionCard:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.regionImage {
+    height: 200px;
+    overflow: hidden;
+}
+
+.regionImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.regionCard:hover .regionImage img {
+    transform: scale(1.05);
+}
+
+.regionInfo {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.regionInfo h3 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0 0 8px 0;
+}
+
+.regionInfo p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6c757d;
+    margin: 0 0 16px 0;
+}
+
+.viewLink {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c19a6b;
+    text-decoration: none;
+}
+
+.viewLink:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact {
+    padding: 80px 0;
+    background: #002349;
+}
+
+.contactContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.contactContainer h2 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 32px 0;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.detailItem svg {
+    color: #c19a6b;
+}
+
+.contactBtn {
+    display: inline-block;
+    padding: 16px 48px;
+    background: #c19a6b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.contactBtn:hover {
+    background: #a68659;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .regionsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+        margin-top: 80px;
+    }
+
+    .heroTitle {
+        font-size: 38px;
+    }
+
+    .regionCard {
+        grid-template-columns: 1fr;
+    }
+
+    .regionImage {
+        height: 180px;
+    }
+}

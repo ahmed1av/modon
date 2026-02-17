@@ -1,0 +1,434 @@
+/**
+ * MODON EVOLUTIO - Off-Market Pages Styles
+ * =====================================
+ * Private listing gate styling
+ */
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 480px;
+    background: linear-gradient(135deg, #001830 0%, #002349 50%, #001830 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.5;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 0 24px;
+}
+
+.heroIcon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(193, 154, 107, 0.15);
+    border: 1px solid rgba(193, 154, 107, 0.3);
+    color: #c19a6b;
+}
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+    color: #fff;
+}
+
+.heroTitle em {
+    font-style: italic;
+}
+
+.heroSubtitle {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Main Section */
+.mainSection {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 80px;
+}
+
+/* Info Side */
+.infoSide h2 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0 0 20px 0;
+}
+
+.infoSide>p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #6c757d;
+    margin: 0 0 48px 0;
+}
+
+/* Features */
+.features {
+    margin-bottom: 48px;
+}
+
+.feature {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.feature:last-child {
+    border-bottom: none;
+}
+
+.feature svg {
+    color: #c19a6b;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.feature h3 {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: #002349;
+    margin: 0 0 6px 0;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Alt Option */
+.altOption {
+    background: #002349;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.altOption span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.altOption a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #c19a6b;
+    text-decoration: none;
+}
+
+.altOption a:hover {
+    color: #fff;
+}
+
+/* Form Side */
+.formSide {
+    background: #fff;
+    padding: 48px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.form h3 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0 0 8px 0;
+}
+
+.form>p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0 0 32px 0;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #002349;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    padding: 14px 16px;
+    border: 1px solid #e9ecef;
+    background: #f8f9fa;
+    font-size: 14px;
+    color: #002349;
+    outline: none;
+    transition: all 0.2s ease;
+    border-radius: 0;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border-color: #c19a6b;
+    background: #fff;
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formPrivacy {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.formPrivacy input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.formPrivacy label {
+    font-size: 13px;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+.formPrivacy label a {
+    color: #c19a6b;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 16px;
+    background: #c19a6b;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submitBtn:hover {
+    background: #a68659;
+}
+
+/* Success Message */
+.successMessage {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.successIcon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(56, 161, 105, 0.1);
+    color: #38a169;
+    border-radius: 50%;
+}
+
+.successMessage h3 {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    color: #002349;
+    margin: 0 0 16px 0;
+}
+
+.successMessage p {
+    font-size: 15px;
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+}
+
+.backHome {
+    display: inline-block;
+    padding: 14px 36px;
+    border: 1px solid #002349;
+    color: #002349;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.backHome:hover {
+    background: #002349;
+    color: #fff;
+}
+
+/* Login Gate Styles (for off-market-buy) */
+.loginGate {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 60px;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.gateIcon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(193, 154, 107, 0.1);
+    color: #c19a6b;
+}
+
+.loginGate h2 {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0 0 12px 0;
+}
+
+.loginGate>p {
+    font-size: 14px;
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+}
+
+.gateForm .formGroup {
+    text-align: left;
+}
+
+.gateNote {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid #e9ecef;
+}
+
+.gateNote p {
+    font-size: 13px;
+    color: #6c757d;
+    margin: 0 0 12px 0;
+}
+
+.gateNote a {
+    color: #c19a6b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.gateNote a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 380px;
+        margin-top: 80px;
+    }
+
+    .heroTitle {
+        font-size: 32px;
+    }
+
+    .formSide {
+        padding: 32px;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+
+    .loginGate {
+        padding: 40px 24px;
+    }
+
+    .altOption {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+.errorMessage {
+    background: #fff8f8;
+    border: 1px solid #ffecec;
+    color: #e53e3e;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.errorMessage svg {
+    flex-shrink: 0;
+}

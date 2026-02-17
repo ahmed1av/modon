@@ -1,0 +1,213 @@
+/**
+ * MODON EVOLUTIO - Footer Styles
+ * ===============================
+ * MODON Evolutio footer styling
+ */
+
+.footer {
+    background: #002349;
+    padding: 80px 0 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Logo Section */
+.logoSection {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.logoIcon {
+    width: 40px;
+    height: 40px;
+    background: #c19a6b;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: serif;
+}
+
+.logoText {
+    font-size: 24px;
+    font-family: serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.logoTextAccent {
+    color: #c19a6b;
+    font-weight: 400;
+}
+
+.contactInfo {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.contactItem {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.phoneLink {
+    color: #8B7355;
+    text-decoration: none;
+}
+
+/* Links Grid - 3 Columns */
+.linksGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.columnTitle {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #c19a6b;
+    margin: 0 0 8px 0;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+.linkList li {
+    margin-bottom: 8px;
+}
+
+.link {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+/* Bottom Section */
+.bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Social Links */
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.socialLinks a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease;
+}
+
+.socialLinks a:hover {
+    color: #fff;
+}
+
+/* Legal Links */
+.legalLinks {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.legalLink {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.legalLink:hover {
+    color: #fff;
+}
+
+.divider {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 11px;
+}
+
+/* Copyright */
+.copyright {
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .linksGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 60px 0 32px;
+    }
+
+    .linksGrid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .legalLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

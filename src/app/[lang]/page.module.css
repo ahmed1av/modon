@@ -1,0 +1,912 @@
+/**
+ * MODON EVOLUTIO - Homepage Styles
+ * =================================
+ * Premium luxury homepage inspired by Baerz.com
+ * Color palette: #002244 (navy), #BE9C7E (gold/tan), #F9F9F9 (light bg)
+ * 
+ * UPDATED: Added premium textures, enhanced shadows, gold glow effects
+ */
+
+/* ====================================
+   MAIN CONTAINER
+   ==================================== */
+.main {
+    min-height: 100vh;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* ====================================
+   SECTION LABEL - Small uppercase label
+   ==================================== */
+.sectionLabel {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #BE9C7E;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.sectionLabel::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 28px;
+    height: 1px;
+    background: #BE9C7E;
+}
+
+.sectionLabelLight {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(190, 156, 126, 0.9);
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.sectionLabelLight::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 28px;
+    height: 1px;
+    background: rgba(190, 156, 126, 0.7);
+}
+
+/* ====================================
+   SECTION HEADER (used in Featured)
+   ==================================== */
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.sectionHeader .sectionLabel {
+    display: inline-block;
+    padding-left: 0;
+}
+
+.sectionHeader .sectionLabel::before {
+    display: none;
+}
+
+.sectionTitle {
+    font-family: var(--font-heading);
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--color-modon-blue);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.sectionTitle em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* ====================================
+   ABOUT SECTION
+   Light background, text left, image right with gold accent
+   ==================================== */
+.about {
+    padding: 120px 0;
+    background: #F9F9F9;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    position: relative;
+}
+
+/* Subtle radial gradient accent */
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(ellipse at 70% 30%, rgba(193, 154, 107, 0.04) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.about.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aboutContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.aboutContent {
+    max-width: 520px;
+}
+
+.aboutTitle {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 400;
+    color: #002244;
+    line-height: 1.25;
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
+}
+
+.titleHighlight {
+    color: #BE9C7E;
+    font-style: italic;
+}
+
+.aboutText {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.8;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.aboutImageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aboutImageAccent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #BE9C7E;
+    top: 24px;
+    right: -24px;
+    z-index: 0;
+    opacity: 0.15;
+}
+
+.aboutImage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* ====================================
+   BESPOKE APPROACH SECTION
+   Dark navy background, image left, text right
+   ==================================== */
+.bespoke {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #001a35 0%, #002244 50%, #001830 100%);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    position: relative;
+}
+
+/* Premium noise texture overlay */
+.bespoke::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(193, 154, 107, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(193, 154, 107, 0.04) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bespoke.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bespokeContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.bespokeImage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+}
+
+.bespokeContent {
+    max-width: 520px;
+}
+
+.bespokeTitle {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 28px;
+    letter-spacing: -0.01em;
+}
+
+.bespokeTitle span {
+    color: #BE9C7E;
+    font-style: italic;
+}
+
+.bespokeText {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 36px;
+}
+
+.bespokeBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #BE9C7E;
+    border: 1px solid rgba(190, 156, 126, 0.4);
+    padding: 16px 32px;
+    transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bespokeBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #BE9C7E;
+    transition: left 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: -1;
+}
+
+.bespokeBtn:hover {
+    color: #002244;
+    border-color: #BE9C7E;
+    box-shadow: 0 4px 20px rgba(190, 156, 126, 0.3);
+}
+
+.bespokeBtn:hover::before {
+    left: 0;
+}
+
+.bespokeBtn svg {
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.bespokeBtn:hover svg {
+    transform: translateX(6px);
+}
+
+/* ====================================
+   FEATURED PROPERTIES SECTION
+   ==================================== */
+.properties {
+    padding: 120px 0;
+    background: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.properties.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.propertiesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+.propertiesEmpty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 0;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.sectionCta {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.viewAllBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #002244;
+    border: 1px solid #002244;
+    padding: 16px 40px;
+    transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.viewAllBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #002244;
+    transition: left 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: -1;
+}
+
+.viewAllBtn:hover {
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 34, 68, 0.2);
+}
+
+.viewAllBtn:hover::before {
+    left: 0;
+}
+
+.viewAllBtn svg {
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.viewAllBtn:hover svg {
+    transform: translateX(6px);
+}
+
+/* ====================================
+   PREFER SECTION
+   Light bg, text left, image right
+   ==================================== */
+.prefer {
+    padding: 120px 0;
+    background: #F9F9F9;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.prefer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.preferContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.preferContent {
+    max-width: 520px;
+}
+
+.preferTitle {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 400;
+    color: #002244;
+    line-height: 1.25;
+    margin-bottom: 32px;
+}
+
+.preferTitle span {
+    color: #BE9C7E;
+    font-style: italic;
+}
+
+.preferList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.preferList li {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.8;
+    color: #6c757d;
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.preferList li:last-child {
+    border-bottom: none;
+}
+
+.preferList li svg {
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.preferImage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+}
+
+/* ====================================
+   EQUESTRIAN SECTION
+   Full-width parallax with overlay
+   ==================================== */
+.equestrian {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.equestrian.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.equestrianBg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.equestrianOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 34, 68, 0.85), rgba(0, 34, 68, 0.65));
+    z-index: 1;
+}
+
+.equestrianContent {
+    position: relative;
+    z-index: 2;
+    padding: 80px 48px;
+}
+
+.equestrianTitle {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 36px;
+    letter-spacing: -0.01em;
+}
+
+.equestrianTitle em {
+    font-style: italic;
+    color: #BE9C7E;
+}
+
+.equestrianBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 16px 40px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.equestrianBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+}
+
+/* ====================================
+   GUIDE SECTION
+   ==================================== */
+.guide {
+    padding: 120px 0;
+    background: #fff;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.guide.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.guideContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.guideContent {
+    max-width: 520px;
+}
+
+.guideTitle {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 400;
+    color: #002244;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.guideSubtitle {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    color: #002244;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.guideText {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.8;
+    color: #6c757d;
+    margin-bottom: 16px;
+}
+
+.guideVideo {
+    position: relative;
+}
+
+.videoPlaceholder {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #002244;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.videoPlaceholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(190, 156, 126, 0.2), rgba(0, 34, 68, 0.6));
+}
+
+.playButton {
+    position: relative;
+    z-index: 1;
+    width: 72px;
+    height: 72px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.videoPlaceholder:hover .playButton {
+    border-color: #BE9C7E;
+    background: rgba(190, 156, 126, 0.15);
+    transform: scale(1.08);
+}
+
+.playButton svg {
+    margin-left: 4px;
+}
+
+/* ====================================
+   ACCESS GUIDE FORM SECTION
+   ==================================== */
+.accessGuide {
+    padding: 100px 48px;
+    background: #F9F9F9;
+    max-width: 100%;
+}
+
+.accessGuideTitle {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 400;
+    color: #002244;
+    text-align: center;
+    margin-bottom: 48px;
+    line-height: 1.3;
+}
+
+.accessForm {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.formRow:last-of-type {
+    grid-template-columns: 1fr;
+}
+
+.accessForm input[type="text"],
+.accessForm input[type="email"],
+.accessForm input[type="tel"],
+.accessForm textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.accessForm input:focus,
+.accessForm textarea:focus {
+    border-color: #BE9C7E;
+}
+
+.accessForm input::placeholder,
+.accessForm textarea::placeholder {
+    color: #999;
+}
+
+.accessForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formCheckbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.formCheckbox input[type="checkbox"] {
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    accent-color: #BE9C7E;
+}
+
+.formCheckbox label {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.formCheckbox label a {
+    color: #BE9C7E;
+    text-decoration: underline;
+}
+
+.submitBtn {
+    display: block;
+    width: 100%;
+    padding: 18px 40px;
+    background: #002244;
+    color: #fff;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.submitBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #BE9C7E, #d4b896);
+    transition: left 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: 0;
+}
+
+.submitBtn:hover {
+    color: #002244;
+    box-shadow: 0 8px 24px rgba(190, 156, 126, 0.3);
+    transform: translateY(-2px);
+}
+
+.submitBtn:hover::before {
+    left: 0;
+}
+
+.submitBtn:active {
+    transform: translateY(0);
+}
+
+/* ====================================
+   RESPONSIVE DESIGN
+   ==================================== */
+@media (max-width: 1024px) {
+
+    .aboutContainer,
+    .bespokeContainer,
+    .preferContainer,
+    .guideContainer {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .propertiesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .about,
+    .bespoke,
+    .prefer,
+    .guide {
+        padding: 80px 0;
+    }
+
+    .sectionTitle {
+        font-size: 36px;
+    }
+
+    .aboutTitle,
+    .bespokeTitle,
+    .preferTitle {
+        font-size: 34px;
+    }
+
+    .aboutImageAccent {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .aboutContainer,
+    .bespokeContainer,
+    .preferContainer,
+    .guideContainer {
+        padding: 0 24px;
+    }
+
+    .propertiesGrid {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+    }
+
+    .about,
+    .bespoke,
+    .prefer,
+    .guide,
+    .properties {
+        padding: 64px 0;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+    }
+
+    .aboutTitle,
+    .bespokeTitle,
+    .preferTitle {
+        font-size: 28px;
+    }
+
+    .equestrianTitle {
+        font-size: 32px;
+    }
+
+    .equestrian {
+        min-height: 400px;
+    }
+
+    .accessGuide {
+        padding: 64px 24px;
+    }
+
+    .accessGuideTitle {
+        font-size: 28px;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+
+    .guideTitle {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionTitle {
+        font-size: 26px;
+    }
+
+    .aboutTitle,
+    .bespokeTitle,
+    .preferTitle {
+        font-size: 24px;
+    }
+
+    .equestrianTitle {
+        font-size: 26px;
+    }
+
+    .sectionHeader {
+        margin-bottom: 36px;
+    }
+}

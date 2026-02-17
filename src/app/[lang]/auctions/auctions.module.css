@@ -1,0 +1,245 @@
+/* ============================================
+   AUCTIONS PAGE STYLES
+   Premium auction platform design
+   ============================================ */
+
+.auctionsPage {
+    min-height: 100vh;
+    background: var(--bg-primary, #0a0a0f);
+    color: var(--text-primary, #e8e4dd);
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.heroContent {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.heroIcon {
+    color: #c5a55a;
+    margin-bottom: 1.5rem;
+}
+
+.heroTitle {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.heroSubtitle {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    opacity: 0.8;
+    color: #c9c5be;
+}
+
+/* Sections */
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.sectionTitle {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+/* Steps Grid */
+.stepsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.stepCard {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(197, 165, 90, 0.15);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stepCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(197, 165, 90, 0.1);
+}
+
+.stepNumber {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c5a55a, #a68b3c);
+    color: #0a0a0f;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.stepTitle {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #fff;
+}
+
+.stepDescription {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #a09a90;
+}
+
+/* Features */
+.featuresSection {
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(197, 165, 90, 0.1);
+    border-bottom: 1px solid rgba(197, 165, 90, 0.1);
+    max-width: 100%;
+    padding: 5rem 2rem;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featureCard {
+    padding: 2rem;
+    text-align: center;
+}
+
+.featureIcon {
+    color: #c5a55a;
+    margin-bottom: 1rem;
+}
+
+.featureTitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.featureDescription {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #a09a90;
+}
+
+/* Empty State */
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #888;
+    gap: 1rem;
+}
+
+.emptyState p {
+    font-size: 1.05rem;
+    max-width: 480px;
+}
+
+/* CTA Section */
+.ctaSection {
+    text-align: center;
+}
+
+.ctaDescription {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    color: #c9c5be;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ctaPrimary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.875rem 2.5rem;
+    background: linear-gradient(135deg, #c5a55a, #a68b3c);
+    color: #0a0a0f;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ctaPrimary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(197, 165, 90, 0.25);
+}
+
+.ctaSecondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.875rem 2.5rem;
+    background: transparent;
+    color: #c5a55a;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid #c5a55a;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ctaSecondary:hover {
+    background: rgba(197, 165, 90, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 40vh;
+        padding: 3rem 1.5rem;
+    }
+
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
+    .stepsGrid,
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,297 @@
+.investorContainer {
+    background-color: #0c0c0c;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: var(--font-montserrat), sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.heroContent {
+    max-width: 900px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-family: var(--font-playfair), serif;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ffffff, #c5a059);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.section {
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    border-color: #c5a059;
+    background: rgba(197, 160, 89, 0.05);
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-family: var(--font-playfair), serif;
+    font-size: 1.75rem;
+    color: #c5a059;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #d0d0d0;
+    line-height: 1.7;
+}
+
+.marketSection {
+    background: #141414;
+    text-align: center;
+}
+
+.statGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.statItem {
+    padding: 30px;
+}
+
+.statNumber {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #c5a059;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.statLabel {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #808080;
+}
+
+.architecture {
+    position: relative;
+    padding: 80px 0;
+}
+
+.archDiagram {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    position: relative;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 30px;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.node {
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    z-index: 2;
+}
+
+.nodeIcon {
+    width: 80px;
+    height: 80px;
+    background: #c5a059;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: #000;
+    font-size: 1.5rem;
+    box-shadow: 0 0 30px rgba(197, 160, 89, 0.3);
+}
+
+.connector {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(197, 160, 89, 0.5), transparent);
+    z-index: 1;
+}
+
+.cta_button {
+    display: inline-block;
+    padding: 18px 40px;
+    background: #c5a059;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.cta_button:hover {
+    background: #d4b47a;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(197, 160, 89, 0.4);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .archDiagram {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .connector {
+        display: none;
+    }
+}
+
+.sectionSubtitle {
+    max-width: 800px;
+    margin: 20px auto;
+    opacity: 0.8;
+}
+
+.titleLarge {
+    font-family: var(--font-playfair), serif;
+    font-size: 3rem;
+}
+
+.titleExtraLarge {
+    font-family: var(--font-playfair), serif;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.statLabelLabel {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #808080;
+}
+
+.nodeDescription {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.benefit {
+    text-align: center;
+    opacity: 0.7;
+}
+
+.benefitText {
+    color: #c5a059;
+}
+
+.demoContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.demoText {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.secondaryButton {
+    display: inline-block;
+    padding: 18px 40px;
+    background: transparent;
+    border: 1px solid #c5a059;
+    color: #c5a059;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.secondaryButton:hover {
+    background: rgba(197, 160, 89, 0.1);
+    transform: scale(1.05);
+}
+
+.centeredHeader {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.techStackGrid {
+    margin-top: 80px;
+}
+
+.finalCTASection {
+    background: linear-gradient(to bottom, #141414, #000);
+    border-top: 1px solid #c5a059;
+}

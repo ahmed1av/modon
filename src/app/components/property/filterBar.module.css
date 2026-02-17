@@ -1,0 +1,314 @@
+/**
+ * Filter Bar Styles
+ * ==================
+ */
+
+.filterBar {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: 20px 0;
+    position: sticky;
+    top: 120px;
+    z-index: 100;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ============================================
+   MAIN FILTERS
+   ============================================ */
+
+.mainFilters {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.searchInput {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 12px 16px;
+    background: var(--color-soft-gray);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-light);
+    transition: var(--transition);
+}
+
+.searchInput:focus-within {
+    border-color: var(--color-gold);
+    background: var(--color-white);
+}
+
+.searchInput input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-charcoal);
+    outline: none;
+}
+
+.searchInput input::placeholder {
+    color: var(--color-text-light);
+}
+
+/* ============================================
+   FILTER GROUP
+   ============================================ */
+
+.filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filterGroup label {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-light);
+}
+
+.selectWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.selectWrapper select {
+    appearance: none;
+    padding: 10px 40px 10px 14px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-charcoal);
+    cursor: pointer;
+    min-width: 150px;
+    transition: var(--transition);
+}
+
+.selectWrapper select:focus {
+    outline: none;
+    border-color: var(--color-gold);
+}
+
+.selectWrapper svg {
+    position: absolute;
+    right: 12px;
+    pointer-events: none;
+    color: var(--color-text-light);
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.advancedBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 16px;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-charcoal);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.advancedBtn:hover,
+.advancedBtn.active {
+    background: var(--color-charcoal);
+    border-color: var(--color-charcoal);
+    color: var(--color-white);
+}
+
+.filterBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: var(--color-gold);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.searchBtn {
+    padding: 12px 32px;
+    background: var(--color-gold);
+    border: none;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.searchBtn:hover {
+    background: var(--color-gold-hover);
+}
+
+/* ============================================
+   ADVANCED FILTERS
+   ============================================ */
+
+.advancedFilters {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.advancedRow {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.rangeInputs {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.rangeInputs input {
+    width: 100px;
+    padding: 10px 14px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-charcoal);
+}
+
+.rangeInputs input:focus {
+    outline: none;
+    border-color: var(--color-gold);
+}
+
+.rangeInputs span {
+    color: var(--color-text-light);
+}
+
+.checkboxGroup {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-charcoal);
+}
+
+.checkbox input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--color-gold);
+    cursor: pointer;
+}
+
+.advancedActions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clearBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px 16px;
+    background: transparent;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.clearBtn:hover {
+    color: var(--color-charcoal);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .mainFilters {
+        flex-wrap: wrap;
+    }
+
+    .searchInput {
+        min-width: 100%;
+        order: -1;
+    }
+
+    .filterGroup {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .advancedBtn,
+    .searchBtn {
+        flex: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .filterBar {
+        top: 80px;
+    }
+
+    .mainFilters {
+        gap: 1rem;
+    }
+
+    .selectWrapper select {
+        min-width: 100%;
+    }
+
+    .checkboxGroup {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .advancedRow {
+        gap: 1.5rem;
+    }
+}

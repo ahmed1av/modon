@@ -1,0 +1,381 @@
+/**
+ * MODON EVOLUTIO - Hero Section Styles
+ * =====================================
+ * MODON Evolutio hero section
+ * Full-screen video with centered heading and search bar
+ */
+
+/* ====================================
+   HERO CONTAINER
+   ==================================== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #002349;
+}
+
+/* Background Video - MODON Evolutio styling */
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 177.77vh;
+    min-height: 100vh;
+    width: 100vw;
+    height: 56.25vw;
+    pointer-events: none;
+    filter: brightness(0.8);
+    opacity: 1;
+}
+
+/* Gradient Overlay - Luxury dark overlay like Baerz */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(0, 34, 68, 0.35) 0%,
+            rgba(0, 34, 68, 0.15) 40%,
+            rgba(0, 34, 68, 0.25) 100%);
+    z-index: 1;
+}
+
+/* ====================================
+   HERO CONTENT
+   ==================================== */
+.content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+/* ====================================
+   HEADLINE - MODON Evolutio Typography
+   ==================================== */
+.headline {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(.2, .7, .2, 1);
+}
+
+.headline.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.title {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.titleAccent {
+    display: block;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ====================================
+   SEARCH BAR - MODON Evolutio Style
+   ==================================== */
+.searchWrapper {
+    width: 100%;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(.2, .7, .2, 1);
+    transition-delay: 0.3s;
+    position: relative;
+}
+
+.searchWrapper.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 40px;
+    padding: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.searchBar:focus-within {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+.searchInputWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 28px;
+}
+
+.searchIcon {
+    color: rgba(255, 255, 255, 0.8);
+    flex-shrink: 0;
+    order: 2;
+}
+
+.searchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    background: transparent;
+    order: 1;
+}
+
+.searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 0.15em;
+}
+
+/* Search Button - Hidden visually but functional */
+.searchButton {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    background: transparent;
+}
+
+/* Search Spinner */
+.searchSpinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    flex-shrink: 0;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ====================================
+   SEARCH SUGGESTIONS DROPDOWN
+   ==================================== */
+.suggestionsDropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: 0 15px 50px rgba(0, 35, 73, 0.25);
+    overflow: hidden;
+    z-index: 10;
+    animation: fadeInDropdown 0.25s ease;
+}
+
+@keyframes fadeInDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.suggestionItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+    padding: 14px 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.15s ease;
+}
+
+.suggestionItem:last-child {
+    border-bottom: none;
+}
+
+.suggestionItem:hover {
+    background: #f8f9fa;
+}
+
+.suggestionIcon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 50%;
+    color: #c19a6b;
+}
+
+.suggestionContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.suggestionType {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #c19a6b;
+}
+
+.suggestionText {
+    font-size: 14px;
+    font-weight: 500;
+    color: #002349;
+}
+
+.suggestionSubtext {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* ====================================
+   SCROLL INDICATOR - Minimal MODON Evolutio style
+   ==================================== */
+.scrollIndicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeInScroll 1s ease 1.2s forwards;
+}
+
+@keyframes fadeInScroll {
+    to {
+        opacity: 0.5;
+    }
+}
+
+.scrollMouse {
+    width: 22px;
+    height: 34px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+}
+
+.scrollWheel {
+    width: 3px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    animation: scrollWheel 1.5s ease-in-out infinite;
+}
+
+@keyframes scrollWheel {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: translateY(4px);
+    }
+}
+
+/* ====================================
+   RESPONSIVE STYLES
+   ==================================== */
+@media (max-width: 992px) {
+    .title {
+        font-size: 38px;
+    }
+
+    .searchInputWrapper {
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 600px;
+    }
+
+    .title {
+        font-size: 28px;
+        letter-spacing: 0.08em;
+    }
+
+    .searchInput {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .content {
+        gap: 32px;
+    }
+
+    .scrollIndicator {
+        display: none;
+    }
+}

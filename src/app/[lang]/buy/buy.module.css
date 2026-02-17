@@ -1,0 +1,419 @@
+/**
+ * MODON EVOLUTIO - Buy Page Styles
+ * ============================
+ * Luxury property listing grid with filters
+ */
+
+/* ====================================
+   PAGE HERO
+   ==================================== */
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(0, 35, 73, 0.7) 0%,
+            rgba(0, 35, 73, 0.5) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 0 24px;
+}
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+    color: #fff;
+}
+
+.heroTitle em {
+    font-style: italic;
+}
+
+.heroSubtitle {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* ====================================
+   FILTER SECTION
+   ==================================== */
+.filterSection {
+    background: #fff;
+    border-bottom: 1px solid #e9ecef;
+    padding: 24px 0;
+    position: sticky;
+    top: 100px;
+    z-index: 50;
+}
+
+.filterContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+/* Search Box */
+.searchBox {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border: 1px solid #e9ecef;
+    background: #f8f9fa;
+    transition: all 0.2s ease;
+}
+
+.searchBox:focus-within {
+    border-color: #c19a6b;
+    background: #fff;
+}
+
+.searchBox svg {
+    color: #6c757d;
+    flex-shrink: 0;
+}
+
+.searchBox input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #002349;
+    outline: none;
+}
+
+.searchBox input::placeholder {
+    color: #adb5bd;
+}
+
+/* Clear Search Button */
+.clearSearchBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: #e9ecef;
+    border-radius: 50%;
+    color: #6c757d;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.clearSearchBtn:hover {
+    background: #c19a6b;
+    color: #fff;
+}
+
+/* Clear All Filters Button */
+.clearFiltersBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border: 1px solid #c19a6b;
+    background: transparent;
+    color: #c19a6b;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.clearFiltersBtn:hover {
+    background: #c19a6b;
+    color: #fff;
+}
+
+/* Filter Dropdowns */
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.filterDropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border: 1px solid #e9ecef;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filterDropdown:hover {
+    border-color: #c19a6b;
+}
+
+.filterDropdown svg {
+    color: #6c757d;
+    flex-shrink: 0;
+}
+
+.filterDropdown select {
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    color: #002349;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    padding-right: 8px;
+}
+
+/* View Toggle */
+.viewToggle {
+    display: flex;
+    border: 1px solid #e9ecef;
+}
+
+.viewToggle button {
+    padding: 12px 16px;
+    background: #fff;
+    border: none;
+    color: #6c757d;
+    transition: all 0.2s ease;
+}
+
+.viewToggle button:first-child {
+    border-right: 1px solid #e9ecef;
+}
+
+.viewToggle button:hover {
+    color: #002349;
+}
+
+.viewToggle button.active {
+    background: #002349;
+    color: #fff;
+}
+
+/* Results Info */
+.resultsInfo {
+    max-width: 1200px;
+    margin: 16px auto 0;
+    padding: 0 24px;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+/* ====================================
+   PROPERTIES GRID
+   ==================================== */
+.propertiesSection {
+    padding: 60px 0 80px;
+    background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+}
+
+.propertiesGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.propertiesGrid.listView {
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+/* Load More */
+.loadMore {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.loadMoreBtn {
+    padding: 16px 48px;
+    border: 1px solid #002349;
+    background: transparent;
+    color: #002349;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+.loadMoreBtn:hover {
+    background: #002349;
+    color: #fff;
+}
+
+/* ====================================
+   LOADING, ERROR, EMPTY STATES
+   ==================================== */
+
+.loadingState,
+.errorState,
+.emptyState {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    text-align: center;
+    color: #6c757d;
+}
+
+.loadingState svg,
+.errorState svg,
+.emptyState svg {
+    color: #c19a6b;
+    margin-bottom: 24px;
+}
+
+.errorState svg {
+    color: #dc3545;
+}
+
+.loadingState p,
+.errorState h3,
+.emptyState h3 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    color: #002349;
+    margin: 0 0 12px 0;
+}
+
+.loadingState p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.errorState p,
+.emptyState p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0 0 24px 0;
+}
+
+.retryBtn,
+.clearFiltersBtn {
+    padding: 14px 36px;
+    border: 1px solid #002349;
+    background: transparent;
+    color: #002349;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.retryBtn:hover,
+.clearFiltersBtn:hover {
+    background: #002349;
+    color: #fff;
+}
+
+/* Spinner Animation */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pagination */
+.paginationInfo {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding: 0 24px;
+    text-align: center;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+/* Error text in results */
+.errorText {
+    color: #dc3545;
+}
+
+/* Suspense Fallback */
+.suspenseFallback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* ====================================
+   RESPONSIVE
+   ==================================== */
+@media (max-width: 1024px) {
+    .propertiesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+        margin-top: 80px;
+    }
+
+    .heroTitle {
+        font-size: 32px;
+    }
+
+    .filterContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .searchBox {
+        min-width: 100%;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+    }
+
+    .propertiesGrid {
+        grid-template-columns: 1fr;
+    }
+}

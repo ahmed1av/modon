@@ -1,0 +1,231 @@
+/**
+ * Contact Form Styles
+ * ====================
+ */
+
+.formCard,
+.successCard {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    padding: 30px;
+}
+
+/* Success Card */
+.successCard {
+    text-align: center;
+}
+
+.successIcon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-gold);
+    border-radius: 50%;
+    color: var(--color-white);
+}
+
+.successCard h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-charcoal);
+    margin-bottom: 1rem;
+}
+
+.successCard p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.resetBtn {
+    padding: 12px 24px;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-charcoal);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.resetBtn:hover {
+    background: var(--color-charcoal);
+    border-color: var(--color-charcoal);
+    color: var(--color-white);
+}
+
+/* Form Card */
+.formTitle {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-charcoal);
+    margin-bottom: 0.5rem;
+}
+
+.formSubtitle {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formGroup label {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-light);
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+    padding: 12px 14px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-charcoal);
+    transition: var(--transition);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+    outline: none;
+    border-color: var(--color-gold);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+    color: var(--color-text-light);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formGroup select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236C757D' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+/* Checkbox */
+.checkboxGroup {
+    margin-top: 0.5rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-gold);
+    cursor: pointer;
+}
+
+.checkbox span {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-charcoal);
+}
+
+/* Submit Button */
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 14px 24px;
+    margin-top: 0.5rem;
+    background: var(--color-gold);
+    border: none;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submitBtn:hover:not(:disabled) {
+    background: var(--color-gold-hover);
+}
+
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Error Message */
+.errorMessage {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: #dc3545;
+    text-align: center;
+}
+
+/* Privacy */
+.privacy {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+.privacy a {
+    color: var(--color-gold);
+    text-decoration: none;
+}
+
+.privacy a:hover {
+    text-decoration: underline;
+}

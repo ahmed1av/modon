@@ -1,0 +1,147 @@
+/**
+ * MODON EVOLUTIO — Stats Counter Styles
+ * ======================================
+ * Premium animated statistics with gold accents
+ */
+
+.statsSection {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #001a35 0%, #002244 50%, #001830 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle pattern overlay */
+.statsSection::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(193, 154, 107, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(193, 154, 107, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.statsContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.statItem {
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    position: relative;
+}
+
+.statItem.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Subtle separator between stats */
+.statItem:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 30%;
+    height: 40%;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(193, 154, 107, 0.3),
+        transparent
+    );
+}
+
+.statNumber {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 16px;
+}
+
+.statValue {
+    font-family: var(--font-heading);
+    font-size: 56px;
+    font-weight: 400;
+    color: #BE9C7E;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.statPrefix,
+.statSuffix {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(190, 156, 126, 0.7);
+}
+
+.statDivider {
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #BE9C7E, transparent);
+    margin: 0 auto 16px;
+}
+
+.statLabel {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4px;
+}
+
+.statSublabel {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .statsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .statItem:nth-child(2)::after {
+        display: none;
+    }
+
+    .statValue {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 576px) {
+    .statsContainer {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .statItem::after {
+        display: none !important;
+    }
+
+    .statsSection {
+        padding: 64px 0;
+    }
+
+    .statItem {
+        padding: 24px 20px;
+    }
+}

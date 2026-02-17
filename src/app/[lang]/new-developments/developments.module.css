@@ -1,0 +1,267 @@
+/**
+ * MODON EVOLUTIO - New Developments Page Styles
+ * ==========================================
+ */
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 35, 73, 0.7) 0%, rgba(0, 35, 73, 0.5) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 0 24px;
+}
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+    color: #fff;
+}
+
+.heroTitle em {
+    font-style: italic;
+}
+
+.heroSubtitle {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Developments Grid */
+.developmentsSection {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.developmentsGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* Development Card */
+.developmentCard {
+    background: #fff;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.developmentCard:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.cardImageInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.developmentCard:hover .cardImage img {
+    transform: scale(1.05);
+}
+
+.cardOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+}
+
+.developmentCard:hover .cardOverlay {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status.sellingnow {
+    background: #c19a6b;
+    color: #fff;
+}
+
+.status.underconstruction {
+    background: #002349;
+    color: #fff;
+}
+
+.status.pre-launch,
+.status.prelaunch {
+    background: #2d3748;
+    color: #fff;
+}
+
+.status.readytomove {
+    background: #38a169;
+    color: #fff;
+}
+
+.cardContent {
+    padding: 28px;
+}
+
+.cardLocation {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c19a6b;
+    margin-bottom: 8px;
+}
+
+.cardTitle {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0 0 12px 0;
+}
+
+.cardDescription {
+    font-size: 14px;
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+}
+
+.cardMeta {
+    display: flex;
+    gap: 24px;
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 16px;
+}
+
+.cardPrice {
+    font-size: 16px;
+    font-weight: 500;
+    color: #002349;
+    margin-bottom: 20px;
+}
+
+.cardCta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #c19a6b;
+}
+
+.developmentCard:hover .cardCta {
+    color: #002349;
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: 80px 0;
+    background: #002349;
+    text-align: center;
+}
+
+.ctaContent h2 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 16px 0;
+}
+
+.ctaContent p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 32px 0;
+}
+
+.ctaBtn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #c19a6b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.ctaBtn:hover {
+    background: #a68659;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .developmentsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+        margin-top: 80px;
+    }
+
+    .heroTitle {
+        font-size: 32px;
+    }
+
+    .cardImage {
+        height: 220px;
+    }
+}

@@ -1,0 +1,283 @@
+/**
+ * MODON EVOLUTIO - Auctions Buy Page Styles
+ * ======================================
+ */
+
+/* Intro */
+.intro {
+    padding: 60px 0 40px;
+    text-align: center;
+    background: #fff;
+}
+
+.introContent h2 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: #002349;
+    margin: 0 0 12px 0;
+}
+
+.introContent p {
+    font-size: 15px;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Filter Bar */
+.filterBar {
+    padding: 20px 0;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.filterContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.filters {
+    display: flex;
+    gap: 16px;
+}
+
+.filters select {
+    padding: 12px 16px;
+    border: 1px solid #e9ecef;
+    background: #fff;
+    font-size: 13px;
+    color: #002349;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.filterBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: #002349;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.filterBtn:hover {
+    background: #001830;
+}
+
+/* Auction Grid */
+.auctionGrid {
+    padding: 60px 0 100px;
+    background: #fff;
+}
+
+.gridContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+/* Auction Card */
+.auctionCard {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.auctionCard:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.img {
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.auctionCard:hover .img {
+    transform: scale(1.05);
+}
+
+.auctionBadge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: #c19a6b;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.cardContent {
+    padding: 28px;
+}
+
+.location {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c19a6b;
+}
+
+.cardContent h3 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 400;
+    color: #002349;
+    margin: 8px 0 12px 0;
+}
+
+.specs {
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.auctionDetails {
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 20px;
+}
+
+.guidePrice,
+.auctionDate {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #6c757d;
+}
+
+.price {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 400;
+    color: #002349;
+}
+
+.date {
+    font-size: 15px;
+    font-weight: 500;
+    color: #002349;
+}
+
+.viewBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c19a6b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.viewBtn:hover {
+    color: #a68659;
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: 80px 0;
+    background: #002349;
+    text-align: center;
+}
+
+.ctaContent h2 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 12px 0;
+}
+
+.ctaContent p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 32px 0;
+}
+
+.ctaBtn {
+    display: inline-block;
+    padding: 16px 48px;
+    background: #c19a6b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.ctaBtn:hover {
+    background: #a68659;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .filterContainer {
+        flex-direction: column;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .cardImage {
+        height: 220px;
+    }
+
+    .auctionDetails {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

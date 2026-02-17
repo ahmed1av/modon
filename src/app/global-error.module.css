@@ -1,0 +1,110 @@
+.errorContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #0c0c0c;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.errorContent {
+    max-width: 600px;
+    width: 100%;
+}
+
+.errorIcon {
+    margin-bottom: 2rem;
+    color: #9a845a;
+    /* A generic premium gold/brown color */
+}
+
+.errorTitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.errorMessage {
+    font-size: 1.125rem;
+    color: #a0a0a0;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.errorDetails {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    border-left: 4px solid #9a845a;
+}
+
+.errorDetailsSummary {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #ffffff;
+}
+
+.errorDetailsContent {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.875rem;
+    color: #e0e0e0;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resetButton {
+    background-color: #9a845a;
+    color: #000000;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.resetButton:hover {
+    background-color: #b59d6d;
+    transform: translateY(-2px);
+}
+
+.homeButton {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.homeButton:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.errorFooter {
+    margin-top: 4rem;
+    font-size: 0.875rem;
+    color: #666666;
+}
