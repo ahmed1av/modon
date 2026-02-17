@@ -92,9 +92,6 @@
             "permanent": false
         }
     ],
-    "env": {
-        "NODE_ENV": "production"
-    },
     "functions": {
         "src/app/api/**/route.ts": {
             "memory": 1024,
